@@ -24,7 +24,7 @@ export default function Experience() {
           Chace Technologies Private Limited 
           </p>
           <p className="lg:w-2/3 mx-auto text-white leading-relaxed" data-aos="zoom-out-down">
-          Frontend Engineer at Chace since 1+ years
+          Frontend Engineer at Chace since 7+ months
           </p>
           <p className="lg:w-2/3 mx-auto text-white leading-relaxed" data-aos="zoom-out-down">
           Here are some of the products which I have worked on at Chace.
