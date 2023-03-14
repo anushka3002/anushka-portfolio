@@ -49,7 +49,7 @@ export default function About() {
 
           <div className="flex justify-center mt-14" data-aos="fade-up">
             <a
-              href="https://drive.google.com/file/d/1kFwttry_xhdiMWPahBhaC9K4Ibe3KlI-/view?usp=sharing"
+              href="https://drive.google.com/file/d/1oLUJryRbx2Y_B4AXMqi0Uhn_Lf33xdbH/view?usp=sharing"
               target="_blank"
               className="inline-flex text-white bg-green-500 border-0 py-3 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
             >
