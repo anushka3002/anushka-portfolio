@@ -43,7 +43,7 @@ export default function Home() {
           <img
             className="image-bar rounded-full"
             alt="hero"
-            src="./anushka.png"
+            src="./Anushka.jpg"
           />
         </div>
       </div>

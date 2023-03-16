@@ -28,12 +28,15 @@ export default function Navbar() {
             Contact Me
           </a>
         </nav>
-        <a
-          href="/#contact"
-          className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-          Hire Me
-          <ArrowRightIcon className="w-4 h-4 ml-1" />
-        </a>
+        <div className="flex justify-center" data-aos="fade-up">
+            <a
+              href="https://drive.google.com/file/d/1oLUJryRbx2Y_B4AXMqi0Uhn_Lf33xdbH/view?usp=sharing"
+              target="_blank"
+              className="inline-flex text-white bg-green-500 border-0 py-3 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+            >
+              Resume
+            </a>
+          </div>
       </div>
     </header>
   );
