@@ -23,6 +23,13 @@
     transform-origin: 100% 100%;      
     display: inline-block;
   }
+
+  .neon-text {
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.7), 0 0 10px rgba(255, 105, 180, 0.7), 
+                 0 0 20px rgba(255, 105, 180, 0.7), 0 0 30px rgba(255, 105, 180, 0.7),
+                 0 0 40px rgba(255, 105, 180, 0.7), 0 0 50px rgba(255, 105, 180, 0.7), 
+                 0 0 75px rgba(255, 105, 180, 0.7);
+  }
   
   @keyframes wave-animation {
       0% { transform: rotate( 0.0deg) }

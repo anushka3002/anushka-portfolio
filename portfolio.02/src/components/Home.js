@@ -5,18 +5,30 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 
 export default function Home() {
-  useEffect(()=>{
-    Aos.init({duration: 2000,
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
       useClassNames: true,
       initClassName: false,
       animatedClassName: 'animated'
     });
   })
-  
+
   return (
     <section id="home" data-aos="fade-up">
-      <div className="about-cont container mx-auto flex px-10 py-20 md:flex-row flex-col items-center mt-20">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-28 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" data-aos="fade-up">
+      <div className="about-cont container mx-auto flex px-10 py-20 md:flex-row flex-col items-center justify-between">
+        <div id="home">
+          <div className="text-white-400">
+            <span className="mr-5 text-4xl">I'M</span><span className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-indigo-500 to-blue-500">Anushka Priya</span>
+            <p className="text-4xl mt-4">Frontend Developer</p>
+            <button className="border-4 border-pink-500 rounded-xl mt-5 py-4 px-10 font-semibold transition-all duration-300 hover:bg-pink-500 hover:text-white-500">
+              Resume
+            </button>
+
+          </div>
+          <div></div>
+        </div>
+        {/* <div className="lg:flex-grow md:w-1/2 lg:pr-28 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" data-aos="fade-up">
           <h1 className="heading text-8xl mt-10">
             Hi There!{" "}
             <span className="wave" data-aos="fade-up">👋</span>
@@ -38,15 +50,17 @@ export default function Home() {
           <br></br>
            
 
-        </div>
-        <div className="lg:max-w-lg md:w-1/3 w-5/6 m-auto" data-aos="fade-right">
+        </div> */}
+        <div className="ml-10" data-aos="fade-right">
           <img
-            className="image-bar rounded-full"
+            className="image-bar"
             alt="hero"
-            src="./Anushka.jpg"
+            width={'600px'}
+            src="./Anu2.jpg"
           />
         </div>
       </div>
     </section>
   );
 }
+
