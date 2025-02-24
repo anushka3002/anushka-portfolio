@@ -16,7 +16,7 @@ export default function About() {
     <section id="about">
       <div className="about-cont container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="">
-          <h1 style={{ fontSize: "2em" }} data-aos="fade-down">
+          <h1 style={{ fontSize: "2em" }}>
             ABOUT
           </h1>
           <br></br>
@@ -24,9 +24,7 @@ export default function About() {
           <div>
             <div
               md={8}
-              className="w-full border border-blue-500 p-7 rounded-xl home-about-description 
-              shadow-[inset_10px_10px_20px_rgba(0,0,255,0.5),_inset_-10px_-10px_20px_rgba(0,0,255,0.3)]"
-              data-aos="fade-right"
+              className="w-full border border-blue-500 p-7 rounded-xl home-about-description"
             >
               <p className="home-about-body text-xl leading-relaxed">
                 With 2.7 years of hands-on experience in frontend development within dynamic startup environments, I have honed my skills in building user-centric solutions. At Flocco, I collaborated with cross-functional teams to deliver impactful products. I was responsible for managing the internal tool, Hubble, which is used to streamline operations for managing products and kirana stores.

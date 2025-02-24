@@ -9,12 +9,10 @@
     line-height: 2rem;
     margin-bottom: 4rem;
 }
-.image-per {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.image-bar {
+    border-radius: 50%;
+    object-fit: cover;
+  }  
 .wave {
     font-size: 3rem;
     animation-name: wave-animation; 

@@ -5,5 +5,17 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-none': {
+          'scrollbar-width': 'none', /* Firefox */
+          '-ms-overflow-style': 'none', /* IE 10+ */
+        },
+        '.scrollbar-none::-webkit-scrollbar': {
+          display: 'none', /* Chrome, Safari, Edge */
+        },
+      });
+    },
+  ],
 }
