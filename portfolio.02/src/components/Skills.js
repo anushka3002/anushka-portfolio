@@ -22,7 +22,7 @@ export default function Skills() {
     { icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDML5CFq70Y9FJ52YnyCjfdyUA3g9B6is_jA&s", name: "TailwindCSS" },
     { icon: "https://raw.githubusercontent.com/Rohan-Shakya/Rohan-Shakya/master/images/next_logo.png", name: "Next.js" },
     { icon: "https://assets-global.website-files.com/6047a9e35e5dc54ac86ddd90/63018720eab24847b1f88ee2_cc137f7e.png", name: "Flutter" },
-    { icon: "https://static-00.iconduck.com/assets.00/typescript-icon-icon-2048x2048-2rhh1z66.png", name: "Typescript" },
+    { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1200px-Typescript.svg.png", name: "Typescript" },
   ];
 
   return (
