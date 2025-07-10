@@ -77,10 +77,7 @@ export default function Experience() {
           <div className="hidden sm:flex h-[50%] lg:mr-5 md:mr-5">
         {flocco ? <div className="border w-full p-5 rounded-xl">
           <p className="text-left leading-relaxed">
-            I worked at Flocco for 1.5 years where I majorly worked on HUBBLE which is internal tool
-            of the company, aprt from that I have worked on ONLYGROCER and KYPER from scratch,
-            ONLYGROCER is where kirana owner can uplod inventory data sheet and via KYPER the data
-            sheet can be approved or rejected by the admin. I also contributed to mobile application using flutter.
+           I worked at Flocco for 1.5 years, primarily on HUBBLE — an internal tool for managing operations. I also built ONLYGROCER and KYPER from scratch, enabling kirana owners to upload inventory sheets and allowing admins to review them. Additionally, I contributed to the mobile app using Flutter.
           </p>
           <p className="mt-3">Tech stack: React.js, Javascript, HTML, CSS, Redux, TailwindCSS, Flutter</p>
           <button style={{width:'150px'}} onClick={() => setFlocco(false)} className="bg-gradient-to-r from-[#b0f2b6] to-[#033a35] to-70% text-white px-4 py-3 rounded-lg mt-4">Back</button>
