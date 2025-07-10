@@ -79,7 +79,7 @@ export default function Projects() {
             </Slider>
             <div className="w-[100%] px-5 mt-8 flex justify-center text-white text-md font-medium">
               <button className="w-[35%] text-sm mt-4 py-3 text-white font-semibold rounded-lg bg-gradient-to-r
-                from-red-500 to-pink-600 transition-transform mr-3"><a target="_blank" href="https://airbnb-20.vercel.app/">Visit website</a></button><button
+                from-red-500 to-pink-600 transition-transform mr-3"><a target="_blank" href="https://rentsphere-20.vercel.app/">Visit website</a></button><button
                 className="w-[30%] mt-4 py-3 text-sm text-white font-semibold rounded-lg bg-gradient-to-r
                 from-red-500 to-pink-600 transition-transform ml-3"><a target="_blank" href="https://github.com/anushka3002/airbnb">Github</a></button>
             </div>
