@@ -107,7 +107,7 @@ export default function Experience() {
           <button style={{width:'150px'}} onClick={() => setFlocco(true)} className="bg-gradient-to-r from-[#b0f2b6] to-[#033a35] to-70% text-white px-4 py-3 rounded-lg mt-4">View details</button>
         </div>}
         </div>
-          <div className="h-[50%] sm:hidden sm:mt-[90%] flex flex-cols items-end">
+          <div className="h-[50%] sm:hidden border flex flex-cols items-end">
           {chace ? <div className="border w-full p-5 rounded-xl">
             <p className="text-left leading-relaxed">
               I worked at Chace Technologies Pvt Ltd for 1.2 years, I was responsible for working on multiple projects, such as LEADOFF, LOCKR FINANCE, LOCKR PAY APP. I built application forms, modals, custom components and also integrated APIs. I also learned flutter and contributed to mobile
