@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
 import './Contact.css';
@@ -6,92 +5,75 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 
 export default function Contact() {
-
   useEffect(() => {
     Aos.init({
       duration: 2000,
       useClassNames: true,
       initClassName: false,
-      animatedClassName: 'animated'
+      animatedClassName: 'animated',
     });
-  })
+  }, []);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_flhtcte', 'template_04b51x4', form.current, 'user_jEpZ0vTu03Aje92I2PJoH')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
-    e.target.reset()
+    e.target.reset();
   };
 
-
   return (
-    <section id="contact" className="relative my-6">
-      <h1 className="title mt-5">GET IN TOUCH</h1>
-      <div className="container mx-auto flex sm:flex-nowrap flex-wrap">
-          <div className="border lg:w-1/3 md:w-1/2 ml-5 rounded-xl py-3 lg:px-5 md:px-5 px-2 flex flex-col w-full md:py-12 mt-8 md:mt-0 mr-5">
-              <div className="contact-info">
-                <ul className="">
-                  <li><a className="circle2"><i class="fas fa-phone-square-alt"></i>+91 7870353593</a></li>
-                  <li className="mx-auto flex sm:flex-nowrap"><a href="mailto:anushka2457@gmail.com" className="circle"><i class="fas fa-envelope-square"></i></a>anushka2457@gmail.com</li>
-                  <li><a href="https://github.com/anushka3002" target="_blank" className="circle"><i class="fab fa-github"></i>Github</a></li>
-                  <li><a href="https://linkedin.com/in/anushka-priya-927697222" target="_blank" className="circle"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
-                  <li><a href="https://medium.com/@anushkasakshi2003" target="_blank" className="circle"><i class="fab fa-medium"></i>Medium</a></li>
-                  <li><a href="https://twitter.com/anushkalyf" target="_blank" className="circle"><i class="fab fa-twitter"></i>Twitter</a></li>
-                </ul>
-              </div>
-        </div>
+    <section id="contact" className="my-12 px-4 sm:px-8 lg:px-16 xl:px-32 relative">
+      <h1 className="text-center text-4xl sm:text-5xl font-bold text-white mb-12 animate__animated animate__fadeInDown">Get In Touch</h1>
+      <div className="flex flex-col lg:flex-row justify-center">
+
+        {/* Contact Form */}
         <form ref={form} onSubmit={sendEmail}
+          className="bg-gray-900 border border-gray-700 rounded-xl p-6 w-full lg:w-1/2 shadow-md hover:shadow-xl transition-shadow duration-300">
 
-          name="contact"
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-12 mt-8 md:mt-0 mr-5 ml-5">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Hire Me
-          </h2>
+          <h2 className="text-white text-3xl font-semibold mb-6">Hire Me</h2>
 
-          <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-              Name
-            </label>
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-gray-400 mb-1">Name</label>
             <input
               type="text"
               id="name"
               name="name"
-              className="w-full rounded border bg-transparent border-white-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
+              className="w-full rounded-md border border-gray-700 bg-transparent py-2 px-3 text-gray-200 focus:ring-2 focus:ring-indigo-600 focus:outline-none transition-all duration-200"
             />
           </div>
-          <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
-              Email
-            </label>
+
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-gray-400 mb-1">Email</label>
             <input
               type="email"
               id="email"
               name="email"
-              className="w-full rounded border bg-transparent border-white-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
+              className="w-full rounded-md border border-gray-700 bg-transparent py-2 px-3 text-gray-200 focus:ring-2 focus:ring-indigo-600 focus:outline-none transition-all duration-200"
             />
           </div>
-          <div className="relative mb-4">
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
-              Message
-            </label>
+
+          <div className="mb-6">
+            <label htmlFor="message" className="block text-gray-400 mb-1">Message</label>
             <textarea
               id="message"
               name="message"
-              className="w-full rounded border bg-transparent border-white-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              rows="5"
+              required
+              className="w-full rounded-md border border-gray-700 bg-transparent py-2 px-3 text-gray-200 focus:ring-2 focus:ring-indigo-600 focus:outline-none transition-all duration-200 resize-none"
             />
           </div>
+
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-md transition-all duration-200">
             Submit
           </button>
         </form>

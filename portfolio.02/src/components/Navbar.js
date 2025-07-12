@@ -16,8 +16,9 @@ const Navbar = () => {
         </a>
         <div className="hidden md:flex space-x-6">
           <a href="#about" className="text-white hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">About</a>
-          <a href="#projects" className="text-white hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Projects</a>
           <a href="#skills" className="text-white hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Skills</a>
+          <a href="#experience" className="text-white hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Experience</a>
+          <a href="#projects" className="text-white hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Projects</a>
           <a href="#contact" className="text-white hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Contact</a>
         </div>
         <button onClick={toggleMenu} className="md:hidden text-white">
@@ -35,10 +36,11 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-black text-white space-y-4 p-4">
+        <div className="md:hidden bg-[#0b0f19] rounded-md text-white space-y-4 p-4">
           <a href="#about" className="block hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">About</a>
-          <a href="#projects" className="block hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Projects</a>
           <a href="#skills" className="block hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Skills</a>
+          <a href="#experience" className="block hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Experience</a>
+          <a href="#projects" className="block hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Projects</a>
           <a href="#contact" className="block hover:text-indigo-500 border-b-2 border-transparent hover:border-indigo-500 transition duration-300">Contact</a>
         </div>
       )}

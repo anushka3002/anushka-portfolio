@@ -21,7 +21,7 @@ export default function Home() {
           <div className="text-white-400">
             <span className="mr-5 lg:text-4xl md:text-4xl text-xl">I'M</span><span className=" lg:text-7xl md:text-7xl text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-indigo-500 to-blue-500">Anushka Priya</span>
             <p className=" lg:text-4xl md:text-4xl text-xl mt-4">Frontend Developer</p>
-            <a target="blank" href="https://drive.google.com/file/d/1Wx7ko8SxwXBTw5COqrWBuRhIjTaa0CLW/view?usp=sharing"><button className="border-4 border-pink-500 rounded-xl mt-5 py-4 px-10 font-semibold transition-all duration-300 hover:bg-pink-500 hover:text-white-500">
+            <a target="blank" href="https://drive.google.com/file/d/1zu_v64LAOr6q39LKwED1XaXUip1rTo4V/view?usp=sharing"><button className="border-4 border-pink-500 rounded-xl mt-5 py-4 px-10 font-semibold transition-all duration-300 hover:bg-pink-500 hover:text-white-500">
               Resume
             </button></a>
 
@@ -32,9 +32,9 @@ export default function Home() {
           <img
             className="image-bar"
             alt="hero"
-            width={'100%'}
+            width={'450px'}
             height={'100%'}
-            src="/Anushka-removebg-preview.jpg"
+            src="/pic.jpg"
           />
         </div>
       </div>
