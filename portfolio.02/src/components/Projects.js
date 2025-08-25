@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Projects() {
 
   const airbnb = ['/Airbnb1.png', '/Airbnb2.png', '/Airbnb3.png']
-  const youtube = ['/youtube/yt1.png', '/youtube/yt2.png', '/youtube/yt3.png']
-  const currency = ['/currencyConverter/currency1.png', '/currencyConverter/currency2.png', '/currencyConverter/currency3.png']
+  const youtube = ['/yt1.png', '/yt2.png', '/yt3.png']
+  const currency = ['/currency1.png', '/currency2.png', '/currency3.png']
   const koovs = ['/koovs/koovs1.png', '/koovs/koovs2.png', '/koovs/koovs3.png']
 
   useEffect(() => {
