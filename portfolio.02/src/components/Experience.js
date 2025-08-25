@@ -1,6 +1,5 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React, { useEffect, useState } from "react";
-import { experience_projects } from "../experienceData";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
